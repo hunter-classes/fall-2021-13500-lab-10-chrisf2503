@@ -35,7 +35,7 @@ std::string getMovie(Movie mv){
     return output;
 }
 std::string getTimeSlot(TimeSlot ts){
-    std::string output = getMovie(ts.movie) + " [start: " + std::to_string(ts.startTime.h) + ":" + std::to_string(ts.startTime.m) + ",";
+    std::string output = getMovie(ts.movie) + " [starts at " + std::to_string(ts.startTime.h) + ":" + std::to_string(ts.startTime.m) + ",";
     Time t = addMinutes(ts.startTime, ts.movie.duration);
     output += " ends by " + std::to_string(t.h) + ":" + std::to_string(t.m) + "]";
     return output;

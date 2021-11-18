@@ -30,8 +30,8 @@ int main(){
     std::cout << getTimeSlot(daytime) << '\n';
     std::cout << getTimeSlot(evening) << '\n';
     std::cout << "----------------------\nTask D:\n";
-    TimeSlot newTs = scheduleAfter(morning, movie2);
-    std::cout << "Current movie playing: " << getTimeSlot(morning) << '\n';
+    TimeSlot newTs = scheduleAfter(evening, movie2);
+    std::cout << "Current movie playing: " << getTimeSlot(evening) << '\n';
     std::cout << "Next movie to play: " << getTimeSlot(newTs) << "\n";
     std::cout << "----------------------\nTask E:\n";
     //timeOverlap(morning, daytime);
