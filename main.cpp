@@ -33,5 +33,13 @@ int main(){
     TimeSlot newTs = scheduleAfter(morning, movie2);
     std::cout << "Current movie playing: " << getTimeSlot(morning) << '\n';
     std::cout << "Next movie to play: " << getTimeSlot(newTs) << "\n";
-    
+    std::cout << "----------------------\nTask E:\n";
+    //timeOverlap(morning, daytime);
+    std::cout << "morning timeslot, daytime timeslot: ";
+    if(timeOverlap(morning, daytime)){
+        std::cout << "Does overlap\n";
+    } 
+    else{
+        std::cout << "Does not overlap\n";
+    }//*/
 }

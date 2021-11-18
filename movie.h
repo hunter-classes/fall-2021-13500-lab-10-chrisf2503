@@ -1,4 +1,5 @@
 #pragma once
+
 enum Genre {ACTION, COMEDY, DRAMA, ROMANCE, THRILLER};
 class Movie { 
 public: 
